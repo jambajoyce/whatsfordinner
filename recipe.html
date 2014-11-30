@@ -1,0 +1,68 @@
+<head>
+  <title>recipe</title>
+</head>
+
+
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='recipe.css' rel='stylesheet'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="recipe.js"></script>
+
+    
+  </head>
+  <body>
+
+    <div class="menu">
+      
+      <!-- Menu icon -->
+      <div class="icon-close">
+        <img src="/x.png" height="20" width="20">
+      </div>
+
+      <!-- Menu -->
+      <ul id>
+        <li id="home"><a href="recipe.html">Home</a></li>
+      </ul>
+    </div>
+
+    <!-- Main body -->
+    <div class="jumbotron">
+      <div class="icon-menu">
+        <i class="fa fa-bars"></i>
+        Other Courses
+      </div>
+      <div class="greeting">What's for dinner?</div>
+      <a id="pic-link" href="url" target="_blank">
+      <img class="rounded" id="myImg" src="" /></a>
+      <div class="recipe-link"><a id="rec-link" href="url" target="_blank"></a></div>
+      {{> nextRecipe }}
+      {{> saveRecipe }}
+      {{> showSaved }}
+      <div class="savedRecipes" id="savedRecipes"></div>
+      </div>
+
+
+
+    </body>
+
+<template name="nextRecipe">
+  <span>
+    <input type="button" class="button" value="Find another recipe" />
+  </span>
+</template>
+
+<template name="saveRecipe">
+  <span>
+    <input type="button" class="buttonSave" value="Save Recipe" />
+  </span>
+</template>
+
+<template name="showSaved">
+  <span>
+    <input type="button" class="buttonShowSaved" value="Show Saved Recipes" />
+  </span  >
+</template>
+
+
